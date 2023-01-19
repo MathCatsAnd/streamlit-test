@@ -8,7 +8,7 @@ st.markdown(output.replace('\n','  \n'))
 try:
   import matplotlib
   st.write('environment.yml correctly installed matplotlib')
-catch:
+except:
   st.write('environment not activated')
   out = os.popen('''conda activate myenv
 pip list''')
