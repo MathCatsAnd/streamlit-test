@@ -3,4 +3,4 @@ import os
 
 st.write('Test App')
 output = os.popen('pip list').read()
-st.markdown(ls.replace('\n','  \n'))
+st.markdown(output.replace('\n','  \n'))
